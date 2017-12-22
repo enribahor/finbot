@@ -89,11 +89,12 @@ computed: {
     login: function(){
       var user = document.getElementById("name").value
       var pass = document.getElementById("pass").value
+      
+      //En esta demo no comprobamos que exista el usuario.
+       //if (user=='Pepe' && pass=='pepe'){
+      this.cambiarPagina(4);
 
-       if (user=='Pepe' && pass=='pepe'){
-         this.cambiarPagina(4);
-
-       }
+       //}
 
 
 

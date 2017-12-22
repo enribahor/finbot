@@ -125,6 +125,7 @@
 </template>
 
 <script>
+
 import {mapActions} from 'vuex';
 import {mapGetters} from 'vuex';
 
@@ -146,13 +147,6 @@ import gastos from './components/gastos.vue'
 import ingresos from './components/ingresos.vue'
 
 
-
-
-
-
-import perfil from './components/perfil.vue';
-
-
 export default {
 
      computed: {
@@ -163,9 +157,9 @@ export default {
             return this.$store.state.generos;
         },
 
-        ...mapGetters([
-            'getpagina'
-        ])
+        ...mapGetters({
+            getpagina: "getpagina"
+        }),
     },
 
 
@@ -192,7 +186,9 @@ export default {
  
    methods: {
 
-     
+     borrar: function(){
+        console.log("Borrar");    
+    },
 
       ...mapActions([
           'cambiarPagina'
