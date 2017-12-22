@@ -22,7 +22,6 @@
 
        
        <div v-if="paginas==0"> 
-         <!-- <animacion id="animacion"></animacion>-->
        <login></login>
        
 
@@ -129,18 +128,6 @@
 import {mapActions} from 'vuex';
 import {mapGetters} from 'vuex';
 
-
-
-import animacion from './components/animacion/animacion.vue';
-
-
-
-import preferencia from './components/peliculas/preferencia.vue';
-import reto from './components/peliculas/reto.vue';
-import generos from './components/peliculas/meapetece.vue';
-import miniaura from './components/animacion/miniaura.vue';
-
-import despliegue from './components/menuAura.vue'
 import formulario from './components/formulario.vue'
 import login from './components/login.vue'
 import calendario from './components/calendario.vue'
@@ -163,14 +150,8 @@ import ingresos from './components/ingresos.vue'
 
 
 
-
-
-
-import peliculasGustos from './components/peliculas/peliculasGustos.vue';
-import peliculasRecomendadas from './components/peliculas/peliculasRecomendadas.vue';
 import perfil from './components/perfil.vue';
-import recomiendaTarifas from './components/tarifas/recomiendaTarifas.vue';
-import filtrosGeneros from './components/peliculas/filtrosGeneros.vue';
+
 
 export default {
 
@@ -191,7 +172,7 @@ export default {
   name: 'app',
   
   components: {
-    animacion, formulario, login, calendario, comienzo,progreso,listacompra,porcentajes, logros,menufinbot,gastos,checkLista,opciones,ingresos
+    formulario, login, calendario, comienzo,progreso,listacompra,porcentajes, logros,menufinbot,gastos,checkLista,opciones,ingresos
   },
 
   data () {

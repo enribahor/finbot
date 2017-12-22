@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import App from './App.vue'
-import menu from './components/menuAura.vue'
 import { store } from './store/store'
 
 new Vue({
